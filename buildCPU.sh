@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+cmake -DYAKL_ARCH="OPENMP" \
+	-DYAKL_OPENMP_FLAGS="-g -O3" \
+	-DYAKL_F90_FLAGS="-g -O3" \
+	-DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+	-DYAKL_PROFILE=ON \
+	..

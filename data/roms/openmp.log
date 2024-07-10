@@ -1,0 +1,20 @@
+Using YAKL Timers
+Using memory pool. Initial size: 62.9395GB ;  Grow size: 62.9395GB.
+run windbasin 3 times!
+run upwelling 3 times!
+run kelvin 3 times!
+Pool Memory High Water Mark:       80104064
+Pool Memory High Water Efficiency: 0.00118531
+******* Timers for thread 0 *******
+________________________________________________________________________________________________________
+Timer label                                       # calls     Total time     Min time       Max time       
+________________________________________________________________________________________________________
+kernel1                                           9           1.318725e-02   5.901000e-06   5.134039e-03   
+kernel2                                           9           1.077436e-02   3.340000e-06   2.224683e-03   
+kernel3                                           9           6.257335e-03   3.996000e-06   1.300102e-03   
+kernel4                                           9           1.601804e-02   7.606000e-06   3.328078e-03   
+________________________________________________________________________________________________________
+The ~ character beginning a timer label indicates it has multiple parent timers.
+Thus, those timers will likely not accumulate like you expect them to.
+
+

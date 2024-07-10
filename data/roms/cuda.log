@@ -1,0 +1,21 @@
+Using YAKL Timers
+Using memory pool. Initial size: 4.92188GB ;  Grow size: 4.92188GB.
+NVIDIA A100-PCIE-40GB
+run windbasin 3 times!
+run upwelling 3 times!
+run kelvin 3 times!
+Pool Memory High Water Mark:       80104064
+Pool Memory High Water Efficiency: 0.0151574
+******* Timers for thread 0 *******
+________________________________________________________________________________________________________
+Timer label                                       # calls     Total time     Min time       Max time       
+________________________________________________________________________________________________________
+kernel1                                           9           4.747570e-04   1.315200e-05   1.589000e-04   
+kernel2                                           9           5.154490e-04   1.913300e-05   1.673940e-04   
+kernel3                                           9           3.626840e-04   1.068400e-05   1.317080e-04   
+kernel4                                           9           5.262610e-04   1.550600e-05   1.718910e-04   
+________________________________________________________________________________________________________
+The ~ character beginning a timer label indicates it has multiple parent timers.
+Thus, those timers will likely not accumulate like you expect them to.
+
+

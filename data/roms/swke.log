@@ -1,0 +1,24 @@
+[6239044 ## mn112: 23003 ## 2024-07-08/17:34:06] cnodenum= 1, job-resource-list: 105912[mpemap:0x1][spemap:0x00000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFFFFFFFFFFF]
+[6239044 ## mn112: 23003 ## 2024-07-08/17:34:06] control node is: mn112.
+[6239044 ## mn112: 23003 ## 2024-07-08/17:34:06] sub control node number is 1, list: mn182.
+[6239044 ## vn105912: 5896 ## 2024-07-08/17:34:09] job's first task will run: /usr/bin/swrun -b 1 -K 1024 -s 13120 -c 128 -t 16 -j 6239044 -F 0xFFFFFFFFFFFFFFFF -i ./kernel kelvin 3 
+Using YAKL Timers
+Using memory pool. Initial size: 1.83105GB ;  Grow size: 1.83105GB.
+Running on SW 1CG mode 
+run kelvin 3 times!
+Pool Memory High Water Mark:       286720
+Pool Memory High Water Efficiency: 0.000145833
+******* Timers for MPE *******
+________________________________________________________________________________________________________
+Timer label                                       # calls     Total time     Min time       Max time       
+________________________________________________________________________________________________________
+kernel1                                           3           1.513579e-03   5.028430e-04   5.077930e-04   
+kernel2                                           3           2.330367e-03   7.759390e-04   7.777390e-04   
+kernel3                                           3           9.262880e-04   3.039960e-04   3.121960e-04   
+kernel4                                           3           2.368417e-03   7.877890e-04   7.923890e-04   
+________________________________________________________________________________________________________
+The ~ character beginning a timer label indicates it has multiple parent timers.
+Thus, those timers will likely not accumulate like you expect them to.
+
+
+[6239044 ## mn112: 23003 ## 2024-07-08/17:34:12] job_finished. use-time: 5.757715 (secs)

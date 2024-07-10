@@ -1,0 +1,43 @@
+[6242813 ## mn401: 4265 ## 2024-07-10/21:51:51] cnodenum= 1, job-resource-list: 13351[mpemap:0x1][spemap:0x00000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFFFFFFFFFFF]
+[6242813 ## mn401: 4265 ## 2024-07-10/21:51:51] control node is: mn401.
+[6242813 ## mn401: 4265 ## 2024-07-10/21:51:51] sub control node number is 1, list: mn017.
+[6242813 ## vn013351: 467 ## 2024-07-10/21:51:54] job's first task will run: /usr/bin/swrun -b 1 -K 1024 -s 13120 -c 128 -t 16 -j 6242813 -F 0xFFFFFFFFFFFFFFFF -i ./build/bin/stencil 512 
+Using YAKL Timers
+Using memory pool. Initial size: 1.83105GB ;  Grow size: 1.83105GB.
+Running on SW 1CG mode 
+=========================================
+head-2d
+=========================================
+=========================================
+jacobi-2d
+=========================================
+=========================================
+fdtd-2d
+=========================================
+-----------------------------------------
+YAKL parallel_for
+-----------------------------------------
+Pool Memory High Water Mark:       2183275648
+Pool Memory High Water Efficiency: 0.555236
+******* Timers for MPE *******
+________________________________________________________________________________________________________
+Timer label                                       # calls     Total time     Min time       Max time       
+________________________________________________________________________________________________________
+stencil-2d-5                                      20          1.163286e-02   5.756410e-04   5.868910e-04   
+stencil-2d-9                                      20          1.263964e-02   6.281400e-04   6.380400e-04   
+stencil-3d-7                                      20          2.020167e-03   9.909900e-05   1.055990e-04   
+stencil-3d-27                                     20          2.284713e-03   1.127980e-04   1.173480e-04   
+stencil-1d-3                                      20          3.235450e-04   1.529900e-05   1.859900e-05   
+stencil-1d-3-simd                                 20          3.303950e-04   1.600000e-05   1.854900e-05   
+head-2d serial                                    20          1.980688e-02   9.495840e-04   1.221080e-03   
+head-2d kernel                                    20          1.170846e-02   5.805910e-04   5.905400e-04   
+jacobi-2d serial                                  20          5.479820e-02   2.729255e-03   2.767805e-03   
+jacobi-2d kernel                                  20          1.056033e-02   5.253910e-04   5.334910e-04   
+fdtd-2d serial                                    128         4.590497e-01   3.565392e-03   3.911085e-03   
+fdtd-2d kernel                                    128         1.749211e-01   1.356678e-03   1.405977e-03   
+________________________________________________________________________________________________________
+The ~ character beginning a timer label indicates it has multiple parent timers.
+Thus, those timers will likely not accumulate like you expect them to.
+
+
+[6242813 ## mn401: 4265 ## 2024-07-10/21:51:56] job_finished. use-time: 3.759733 (secs)
